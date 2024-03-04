@@ -36,8 +36,8 @@ By the end of the #100DaysOfCloud challenge, I hope to be:
 
 ## Stepping out the door
 
-- [:heavy_check_mark:] ☁️ 1 > [My First Day](Journey/001/Readme.md)
-- [] ☁️ 2 > [](Journey/002/Readme.md)
+- [x] ☁️ 1 > [My First Day](Journey/001/Readme.md)
+- [ ] ☁️ 2 > [](Journey/002/Readme.md)
 - [ ] ☁️ 3 > [](Journey/003/Readme.md)
 - [ ] ☁️ 4 > [](Journey/004/Readme.md)
 - [ ] ☁️ 5 > [](Journey/005/Readme.md)
