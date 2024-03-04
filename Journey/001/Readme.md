@@ -1,52 +1,24 @@
 **Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+![placeholder image](banner.png)
 
-# New post title here
+# Joining #100DaysOfCloud Challenge
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Hi everyone! I'm excited to announce that I'm joining the #100DaysOfCloud challenge. As a Software Engineer with a proven track record in developing and deploying efficient software, I'm passionate about leveraging technology to create meaningful impact.
 
-## Prerequisite
+While my experience spans software development, scripting, automation, and infrastructure as code (IaC), I'm eager to broaden my skillset and delve deeper into the world of cloud computing. This challenge represents a fantastic opportunity to do just that.
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
-
-## Use Case
-
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
-
-## Try yourself
-
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
+   
 ## Next Steps
 
-✍️ Describe what you think you think you want to do next.
+Design and configure a high available 3-tier Architecture on AWS
+- Tier 1 - User/Presentation Tier
+- Tier 2 - Application Tier
+- Tier 3 - Data Tier 
+
+
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+[LinkedIn Post](https://www.linkedin.com/posts/jecinta-atieno_github-ogolajecinta100daysofcloud-activity-7170449011089235968-2HX3?utm_source=share&utm_medium=member_desktop)

@@ -10,25 +10,34 @@
 5. Update your main README to link back to your Day Journey article
 4. If you need ideas go to [#100DaysOfCloudIdeas](https://github.com/100DaysOfCloud/100DaysOfCloudIdeas)
 
-## How to use this template:
-Fill in your details where you see this icon ✍️
-We have provided a sample Day Journey entry staring at 0. You can delete this example.
 
-## [✍️ Your Name]'s Cloud Journey
+## Jecinta's Cloud Journey
 
-[✍️ Introduce yourself]
+### Introduction
+Hi everyone! I'm a Software Engineer with a passion for building and deploying efficient software solutions. 
+My background is in software development and deployment, scripting, automation, and infrastructure as code (IaC). 
+I'm particularly interested in streamlining operations, improving  user engagement, and delivering optimal system solutions.
 
-[✍️ Tell us why you started this challenge]
+### Why the #100DaysOfCloud Challenge?
+As a seasoned developer with experience in various environments, I'm always looking to expand my skillset and stay ahead of the curve. Cloud computing is rapidly evolving, and I'm eager to deepen my understanding of this critical domain.
 
-[✍️ Tell us where you want to be at the end of the challenge]
+Throughout my career, I've worked on projects utilizing cloud platforms like AWS and Oracle Cloud, but I want to dive deeper and gain a more comprehensive skillset. This challenge is the perfect opportunity to achieve that.
 
-- [✍️ Link to your Twitter](https://twitter.com/username)
-- [✍️ Link to your LinkedIn](https://www.linkedin.com/in/username)
+### Where I See Myself After the Challenge:
+
+By the end of the #100DaysOfCloud challenge, I hope to be:
+
+* More proficient in using various cloud platforms: I want to solidify my knowledge in existing platforms like AWS and explore others like Azure.
+* Confident in building and deploying cloud-based solutions: My goal is to be able to confidently design and implement complex solutions leveraging the power of the cloud.
+* A valuable asset in teams working with cloud technologies: I want to be able to contribute effectively to projects involving cloud infrastructure and contribute to team success.
+
+- [My Twitter](https://twitter.com/ogolajecinta)
+- [My LinkedIn](https://www.linkedin.com/in/jecinta-atieno)
 
 ## Stepping out the door
 
-- [ ] ☁️ 1 > [My First Day](Journey/001/Readme.md)
-- [ ] ☁️ 2 > [](Journey/002/Readme.md)
+- [:heavy_check_mark:] ☁️ 1 > [My First Day](Journey/001/Readme.md)
+- [] ☁️ 2 > [](Journey/002/Readme.md)
 - [ ] ☁️ 3 > [](Journey/003/Readme.md)
 - [ ] ☁️ 4 > [](Journey/004/Readme.md)
 - [ ] ☁️ 5 > [](Journey/005/Readme.md)
