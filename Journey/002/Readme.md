@@ -101,4 +101,4 @@ I aim to further expand my knowledge and skills in designing highly available an
 
 ## Social Proof
 
-[link](link)
+[LinkedIn Post](https://www.linkedin.com/posts/jecinta-atieno_100daysofcloudchallenge-cloudcomputing-awscloud-activity-7171259440531230720-RB5O?utm_source=share&utm_medium=member_desktop)
