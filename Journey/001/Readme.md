@@ -1,4 +1,3 @@
-**Add a cover photo like:**
 ![placeholder image](banner.png)
 
 # Joining #100DaysOfCloud Challenge
