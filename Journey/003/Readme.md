@@ -1,6 +1,6 @@
-(Images/LB-HA.png)
+![Load Balancer - HA image](./Images/LB-HA.png)
 
-# Creating a Highly AVailable Environment
+# Creating a Highly Available Environment
 
 ## Introduction
 
