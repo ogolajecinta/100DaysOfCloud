@@ -1,52 +1,64 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+![DB HA Arch](./Screenshots/DB-HA-arch.png "Database HA Architecture")
 
-# New post title here
+# Database High Availability (DB HA) Environment Setup 
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+* This is a continuation of [Day 3](../003/Readme.md). Initially, the Amazon RDS database operates from only one database instance. 
+
+* I chose to continue with the topic of making databases highly available by configuring them to run across multiple Availability Zones *(Multi-AZ deployment)* because it builds upon the concept of ensuring high availability that I learned in Day 3. 
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+* [Day 3](../003/Readme.md) environment setup
 
 ## Use Case
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+* Amazon RDS databases is configured to operate in Multi-AZ deployment so as to enhance availability and fault tolerance. By replicating the database across multiple Availability Zones, any failure in one zone automatically fails over to the standby database in another zone, ensuring continuous operation and minimal downtime for applications reliant on the database.
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+✍️ Mini-Tutorial
 
-### Step 1 — Summary of Step
+### Step 1 — Modify the Database
 
-![Screenshot](https://via.placeholder.com/500x300)
+* On the Services menu, choose **RDS**.
+* In the left navigation pane, choose **Databases**.
+* Choose the link for the name of the **inventory-db instance**.
+* Choose **Modify** 
 
-### Step 1 — Summary of Step
+![Modify](./Screenshots/DB-HA-0.png)
 
-![Screenshot](https://via.placeholder.com/500x300)
+![Screenshot](./Screenshots/DB-HA-2.png)
 
-### Step 3 — Summary of Step
+* Scroll down to the **Availability & durability** section. For **Multi-AZ deployment**, select  C**reate a standby instance**
 
-![Screenshot](https://via.placeholder.com/500x300)
+![Availability & Durability ](./Screenshots/DB-HA-1.png)
+
+* Scroll back up and for **DB instance class**, select **db.t3.small.** - This doubles the size of the instance.
+
+![Instance](./Screenshots/DB-HA-3.png)
+
+* For **Allocated storage** under **Storage**, enter: *10*
+
+![Storage](./Screenshots/DB-HA-4.png)
+
+* On the next page, Under **Schedule modifications**, select  **Apply immediately**.
+
+![Schedule modifications](./Screenshots/DB-HA-5.png)
+
+* Click **Modify DB instance** to apply changes
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+* A deeper understanding of enhancing database availability and fault tolerance on AWS. 
+* I learned the importance of Multi-AZ deployment in mitigating single points of failure and ensuring continuous operation of critical applications. 
+* Additionally, I gained practical experience in configuring and testing Multi-AZ setups, equipping me with valuable skills for building resilient cloud infrastructures.
 
 ## Next Steps
 
-✍️ Describe what you think you think you want to do next.
+* Improve the architecture by making the NAT gateway Highly Available. [Next Challenge >>](../004/Readme.md)
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+[LinkedIn Post](https://www.linkedin.com/posts/jecinta-atieno_100daysofcloud-aws-awscloud-activity-7173782641609953280-IhsT?utm_source=share&utm_medium=member_desktop)
