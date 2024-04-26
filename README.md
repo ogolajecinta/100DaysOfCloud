@@ -40,7 +40,7 @@ By the end of the #100DaysOfCloud challenge, I hope to be:
 - [x] ☁️ 2 > [Deploying 3-tier Architecture on AWS](Journey/002/Readme.md)
 - [x] ☁️ 3 > [Designing a Highly Available Application](Journey/003/Readme.md)
 - [x] ☁️ 4 > [Make the database and NAT gateway Highly Available](Journey/004/Readme.md)
-- [ ] ☁️ 5 > [](Journey/005/Readme.md)
+- [x] ☁️ 5 > [Configuring a highly available NAT Gateway](Journey/005/Readme.md)
 - [ ] ☁️ 6 > [](Journey/006/Readme.md)
 - [ ] ☁️ 7 > [](Journey/007/Readme.md)
 - [ ] ☁️ 8 > [](Journey/008/Readme.md)
