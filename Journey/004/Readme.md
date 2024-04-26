@@ -1,4 +1,4 @@
-![DB HA Arch](./Screenshots/DB-HA-arch.png "Database HA Architecture")
+<img src="./Screenshots/DB-HA-arch.png" alt="DB HA Arch" width="500"/>
 
 # Database High Availability (DB HA) Environment Setup 
 
@@ -27,25 +27,25 @@
 * Choose the link for the name of the **inventory-db instance**.
 * Choose **Modify** 
 
-![Modify](./Screenshots/DB-HA-0.png)
+<img src="./Screenshots/DB-HA-0.png" alt="DB before Modification" width="500"/>
 
-![Screenshot](./Screenshots/DB-HA-2.png)
+<img src="./Screenshots/DB-HA-2.png" alt="DB modified" width="500"/>
 
 * Scroll down to the **Availability & durability** section. For **Multi-AZ deployment**, select  C**reate a standby instance**
 
-![Availability & Durability ](./Screenshots/DB-HA-1.png)
+<img src="./Screenshots/DB-HA-1.png" alt="Availability & Durability setting" width="500"/>
 
 * Scroll back up and for **DB instance class**, select **db.t3.small.** - This doubles the size of the instance.
 
-![Instance](./Screenshots/DB-HA-3.png)
+<img src="./Screenshots/DB-HA-3.png" alt="Instance" width="500"/>
 
 * For **Allocated storage** under **Storage**, enter: *10*
 
-![Storage](./Screenshots/DB-HA-4.png)
+<img src="./Screenshots/DB-HA-4.png" alt="Storage" width="500"/>
 
 * On the next page, Under **Schedule modifications**, select  **Apply immediately**.
 
-![Schedule modifications](./Screenshots/DB-HA-5.png)
+<img src="./Screenshots/DB-HA-5.png" alt="Schedule Modifications" width="500"/>
 
 * Click **Modify DB instance** to apply changes
 
@@ -57,7 +57,7 @@
 
 ## Next Steps
 
-* Improve the architecture by making the NAT gateway Highly Available. [Next Challenge >>](../004/Readme.md)
+* Improve the architecture by making the NAT gateway Highly Available. [Next Challenge >>](../005/Readme.md)
 
 ## Social Proof
 
