@@ -1,52 +1,69 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+<img src="./Screenshots/NAT-HA-arch.png" alt="Highly Available NAT Gateway" width="500"/>
 
-# New post title here
+# Configuring a highly available NAT Gateway 
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+* The application servers run in a private subnet. If the servers must access the internet (for example, to download data), the requests must be redirected through a Network Address Translation (NAT) gateway. (The NAT gateway must be located in a public subnet).
+
+* In this task, I will make the NAT gateway highly available by launching another NAT gateway in the other Availability Zone. The resulting architecture will be highly available:
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+* [Day 3](../003/Readme.md) Environment setup
+* [Day 4](../004/Readme.md) Making the database highly available
 
 ## Use Case
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+* The current architecture (as shown below) has only one NAT gateway in Public Subnet 1. Thus, if Availability Zone 1 fails, the application servers will not be able to communicate with the internet.This solution demonstrates how to configure a highly available NAT gateway.
 
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+<img src="./Screenshots/Initial-Arch.png" alt="Current Architecture" width="500"/>
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+✍️ Mini-Tutorial
 
-### Step 1 — Summary of Step
+### Step 1 — Add another NAT gateway
 
-![Screenshot](https://via.placeholder.com/500x300)
+* On the Services menu, choose **VPC**.
+* In the left navigation pane, choose **NAT gateways**.
+* Choose **Create NAT gateway** and configure these settings.
+    * Subnet: **Public Subnet 2**
+    * Choose Allocate Elastic IP
+    * Choose Create NAT gateway
 
-### Step 1 — Summary of Step
+<img src="./Screenshots/NAT-HA-1.png" alt="Create NAT gateway" width="500"/>
+<img src="./Screenshots/NAT-HA-2.png" alt="NAT gateway created" width="500"/>
 
-![Screenshot](https://via.placeholder.com/500x300)
+* Next, you need to create *a new route table for Private Subnet 2*. This route table will redirect traffic to the new NAT gateway.
+    - Choose **Route table** to create route table.
 
-### Step 3 — Summary of Step
+<img src="./Screenshots/NAT-HA-3.png" alt="Create Route Table for Private Subnet 2" width="500"/>
 
-![Screenshot](https://via.placeholder.com/500x300)
+* Look at the current settings for the route table, you notice that one route directs all traffic locally. You will now add a route to send internet-bound traffic through the new NAT gateway.
+
+<img src="./Screenshots/NAT-HA-4.png" alt="Route table created" width="500"/>
+
+* Choose **Edit routes** then configure these settings: 
+    * **Destination**: `0.0.0.0/0`
+    * **Target**: The newly created NAT Gateway
+    * Click on **Save Changes**
+
+<img src="./Screenshots/NAT-HA-5.png" alt="Modified Route table to include 2nd NAT gateway" width="500"/>
+
+* Chhose **subnet associations** tab to Edit subnet association. Select  **Private Subnet 2** then save.
+
+<img src="./Screenshots/NAT-HA-6.png" alt="Edit subnet associations" width="500"/>
+
+Now you have a second NAT gateway with its own public IP address that can be used by resources in the private subnet in the same Availability Zone within the VPC.
+
+Now you have a second NAT gateway with its own public IP address that can be used by resources in the private subnet in the same Availability Zone within the VPC  
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
+* A deeper understanding of enhancing fault tolerance and resilience on AWS. 
+* I gained practical experience in configuring NAT gateways, equipping me with valuable skills for building resilient cloud infrastructures.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+[LinkedIn Post](https://www.linkedin.com/posts/jecinta-atieno_100daysofcloud-aws-awscloud-activity-7173782641609953280-IhsT?utm_source=share&utm_medium=member_desktop)
