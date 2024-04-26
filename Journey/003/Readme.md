@@ -1,4 +1,4 @@
-![Load Balancer - HA image](./Images/LB-HA.png)
+<img src="./Images/LB-HA.png" alt="Load Balancer - HA image" width="500"/>
 
 # Creating a Highly Available Environment
 
@@ -35,52 +35,67 @@
 
 ### Step 1 — Configuring your VPC
 #### VPC
-![VPC Architecture](./Images/VPC.png)
+<img src="./Images/VPC.png" alt="VPC Architecture" width="500"/>
+
 #### Public and private subnets in two Availability Zones
-![Subnets](./Images/Task%201-Subnets.png)
+<img src="./Images/Task%201-Subnets.png" alt="Subnets" width="500"/>
+
 #### Route Tables
-![Route Tables](./Images/Task%201-Route-Table.png)
+<img src="./Images/Task%201-Route-Table.png" alt="Route Tables" width="500"/>
+
 #### Network Access Control Lists (NACLs)
-![NACLs](./Images/T1-Nacl.png)
-![NACLs](./Images/T1-Nacl2.png)
+<img src="./Images/T1-Nacl.png" alt="NACLs" width="500"/>
+<img src="./Images/T1-Nacl2.png" alt="NACLs" width="500"/>
+
 #### An internet gateway that is associated with the public subnets
-![Internet Gateway](./Images/T1-IG.png)
+<img src="./Images/T1-IG.png" alt="Internet Gateway" width="500"/>
+
 #### Security Groups
-![All SG](./Images/T1-SG.png)
-![Inventory DB SG](./Images/T1-DB%20SG.png)
+<img src="./Images/T1-SG.png" alt="All Security Groups" width="500"/>
+<img src="./Images/T1-DB%20SG.png" alt="Inventory DB SG" width="500"/>
 
 *The Application Security Group below will be configured later on*
 
-![Inventory App SG](./Images/T1-App%20SG.png)
+<img src="./Images/T1-App%20SG.png" alt="Inventory App SG" width="500"/>
+
 #### A Network Address Translation (NAT) gateway in one of the public subnets
 #### Database Instance
-![Inventory DB SG](./Images/T1-DB%20Instance.png)
+<img src="./Images/T1-DB%20Instance.png" alt="Inventory DB SG" width="500"/>
+
 
 ### Step 2 — Creating an Application Load Balancer
 
-![LB-0](./Images/T2-How%20LB.png)
+<img src="./Images/T2-How%20LB.png" alt="LB-0" width="500"/>
 
 * On the Services menu, choose **EC2**
 * In the left navigation pane, choose **Load Balancers** then **Create load balancer**
 * Under **Application Load Balancer**, choose **Create**
 
-![Choose LB](./Images/T2-LB.png)
+<img src="./Images/T2-LB.png" alt="Choose LB" width="500"/>
+
 
 2.1 - Basic Configuration
-![LB-1](./Images/T2-LB-0.png)
+<img src="./Images/T2-LB-0.png" alt="LB-1" width="500"/>
+
 2.2 - Network Mapping
-![LB-Network](./Images/T2-LB-1.png)
+<img src="./Images/T2-LB-1.png" alt="LB-Network" width="500"/>
+
+
 2.3 - Security Groups
-![LB-SG](./Images/T2-LB%20SG.png)
+<img src="./Images/T2-LB%20SG.png" alt="LB-SG" width="500"/>
+
+
 2.4 - Listeners and Routing
 
 * In the **Listeners and routing section**, choose **Create target group**
 
-![LB-TG](./Images/T2-TG.png)
-![LB-Listeners](./Images/T2-Listeners.png)
+<img src="./Images/T2-TG.png" alt="LB-TG" width="500"/>
+<img src="./Images/T2-Listeners.png" alt="LB-Listeners" width="500"/>
 
 2.5 - Load Balancer Created
-![LB-Created](./Images/T2-LB-Created%20(2).png)
+
+<img src="./Images/T2-LB-Created%20(2).png" alt="LB-Created" width="500"/>
+
 
 ### Step 3 — Creating an Auto Scaling Group
 #### Create an AMI for Auto Scaling
@@ -89,27 +104,30 @@
 * In the **Actions**  menu, choose **Image and templates** > **Create image**, then configure:
 * Select  Web Server 1.
 
-![ASG-AMI](./Images/T3-AMI-create.png)
-![ASG-AMI](./Images/T3-AMI-0.png)
+<img src="./Images/T3-AMI-create.png" alt="ASG-AMI" width="500"/>
+<img src="./Images/T3-AMI-0.png" alt="ASG-AMI" width="500"/>
 
 * *Keep all other settings default.*
 
-![ASG-AMI-Created](./Images/T3-AMI-Created.png)
+<img src="./Images/T3-AMI-Created.png" alt="ASG-AMI-Created" width="500"/>
+
 #### Create a Launch Template & Auto Scaling Group
-![ASG-LT](./Images/T3-LT-Create.png)
-![ASG-LT](./Images/T3-LT-1.png)
-![ASG-LT](./Images/T3-LT-2.png)
-![ASG-LT](./Images/T3-LT-3.png)
-![ASG-LT](./Images/T3-LT-4.png)
+<img src="./Images/T3-LT-Create.png" alt="ASG-LT" width="500"/>
+<img src="./Images/T3-LT-1.png" alt="ASG-LT" width="500"/>
+<img src="./Images/T3-LT-2.png" alt="ASG-LT" width="500"/>
+<img src="./Images/T3-LT-3.png" alt="ASG-LT" width="500"/>
+<img src="./Images/T3-LT-4.png" alt="ASG-LT" width="500"/>
+
 * *In the **Advanced Details**, only change the following parts:*
 
-![ASG-LT](./Images/T3-LT-5.png)
-![ASG-LT](./Images/T3-LT-5.1.png)
-![ASG-LT](./Images/T3-LT-5.2.png)
+<img src="./Images/T3-LT-5.png" alt="ASG-LT" width="500"/>
+<img src="./Images/T3-LT-5.1.png" alt="ASG-LT" width="500"/>
+<img src="./Images/T3-LT-5.2.png" alt="ASG-LT" width="500"/>
+
 
 ### Step 4 — Updating Security Groups
+<img src="./Images/T4-Update%20SG.png" alt="LB-SG" width="500"/>
 
-![LB-SG](./Images/T4-Update%20SG.png)
 #### Load Balancer SG
 * We configured the load balancer security group when creating the load balancer. It accepts all incoming *HTTP* and *HTTPS* traffic.
 * The load balancer has been configured to forward incoming requests to a *target group*. When Auto Scaling launches new instances, it will automatically add those instances to the target group.
@@ -117,11 +135,13 @@
 #### Application SG
 * Add a rule to accept incoming HTTP traffic from the load balancer.
 
-![LB-SG](./Images/T4-App%20SG.png)
+<img src="./Images/T4-App%20SG.png" alt="LB-SG" width="500"/>
+
 #### Database SG
 * Configure the database security group to only accept incoming traffic from the application servers as below
 
-![LB-SG](./Images/T4-DB%20SG.png)
+<img src="./Images/T4-DB%20SG.png" alt="LB-SG" width="500"/>
+
 
 ### Step 5 — Testing the Application
 * In the left navigation pane, choose **Target Groups**
@@ -134,11 +154,11 @@ It should be similar to: *inventory-LB-xxxx.elb.amazonaws.com*
 
 * Open a new web browser tab, paste the DNS name from your clipboard and press ENTER.
 
-![LB-SG](./Images/T5-LB-Test.png)
+<img src="./Images/T5-LB-Test.png" alt="LB-SG" width="500"/>
 
 This is how data flows with a Load Balancer
 
-![LB-SG](./Images/T5-Test-App.png)
+<img src="./Images/T5-Test-App.png" alt="LB-SG" width="500"/>
 
 ### Step 6 — Testing high availabilty
 The application is configured to be highly available. You can prove the application's high availability by terminating one of the EC2 instances.
